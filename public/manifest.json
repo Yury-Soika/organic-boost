@@ -1,0 +1,25 @@
+{
+  "name": "Organic Boost",
+  "short_name": "Organic Boost",
+  "description": "Affordable, predictable and effective ASO & machine-motivated installs for iOS and Android",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#14532d",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en"
+}
