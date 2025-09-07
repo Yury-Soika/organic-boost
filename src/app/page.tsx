@@ -57,7 +57,10 @@ export default function HomePage() {
                       />
                     </svg>
                   </Link>
-                  <Link href='/contact' className='btn-secondary text-center'>
+                  <Link
+                    href='https://t.me/organic_aso_support'
+                    className='btn-secondary text-center'
+                  >
                     {t('hero.cta.audit')}
                     <svg
                       className='inline-block w-5 h-5 ml-2'
@@ -144,22 +147,22 @@ export default function HomePage() {
             <div className='grid lg:grid-cols-2 gap-12 items-stretch'>
               {/* Stats - Left Side */}
               <div className='space-y-5 flex flex-col justify-center'>
-                <div className='text-2xl font-bold text-primary'>
+                <div className='text-lg font-bold text-black'>
                   🚀 {t('achievements.stats.installs')}
                 </div>
-                <div className='text-2xl font-bold text-primary'>
+                <div className='text-lg font-bold text-black'>
                   📱 {t('achievements.stats.apps')}
                 </div>
-                <div className='text-2xl font-bold text-primary'>
+                <div className='text-lg font-bold text-black'>
                   📈 {t('achievements.stats.mrr')}
                 </div>
-                <div className='text-2xl font-bold text-primary'>
+                <div className='text-lg font-bold text-black'>
                   🌍 {t('achievements.stats.countries')}
                 </div>
-                <div className='text-2xl font-bold text-primary'>
+                <div className='text-lg font-bold text-black'>
                   📈 {t('achievements.stats.campaigns')}
                 </div>
-                <div className='text-2xl font-bold text-primary'>
+                <div className='text-lg font-bold text-black'>
                   🕑 {t('achievements.stats.days')}
                 </div>
               </div>
@@ -167,7 +170,7 @@ export default function HomePage() {
               {/* Text Content - Right Side */}
               <div className='flex flex-col justify-center'>
                 <div className='bg-primary-50 rounded-xl p-8'>
-                  <p className='text-3xl text-text-primary leading-relaxed font-medium'>
+                  <p className='text-2xl text-text-primary leading-relaxed font-medium'>
                     {t('achievements.subtitle')}
                   </p>
                 </div>
@@ -175,7 +178,7 @@ export default function HomePage() {
             </div>
 
             {/* Features List */}
-            <div className='flex flex-wrap justify-between items-center mt-12 text-center w-full'>
+            <div className='flex flex-wrap justify-between items-center mt-24 text-center w-full'>
               <div className='flex flex-col items-center space-y-3'>
                 <div className='w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0'>
                   <svg
@@ -455,6 +458,34 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Knowledge Base CTA */}
+        <section className='py-16 px-6'>
+          <div className='max-w-4xl mx-auto text-center'>
+            <h2 className='text-3xl font-bold mb-4'>
+              {t('knowledgeBase.title')}
+            </h2>
+            <p className='text-xl text-text-secondary mb-8'>
+              {t('knowledgeBase.subtitle')}
+            </p>
+            <Link href='/knowledge-base' className='btn-primary'>
+              {t('knowledgeBase.cta')}
+              <svg
+                className='inline-block w-5 h-5 ml-2'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M13 7l5 5m0 0l-5 5m5-5H6'
+                />
+              </svg>
+            </Link>
+          </div>
+        </section>
+
         {/* How It Works Section */}
         <section className='py-16 px-6 bg-surface'>
           <div className='max-w-4xl mx-auto'>
@@ -524,7 +555,7 @@ export default function HomePage() {
                 {t('cta.telegram')}
               </Link>
               <Link
-                href='/contact'
+                href='https://t.me/organic_aso_support'
                 className='border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors'
               >
                 {t('cta.audit')}

@@ -41,34 +41,10 @@ export default function Footer() {
             <ul className='space-y-2 text-sm'>
               <li>
                 <Link
-                  href='/services'
-                  className='text-gray-300 hover:text-white transition-colors'
-                >
-                  {t('services.machineInstalls.title')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/services'
-                  className='text-gray-300 hover:text-white transition-colors'
-                >
-                  {t('services.aso.title')}
-                </Link>
-              </li>
-              <li>
-                <Link
                   href='/pricing'
                   className='text-gray-300 hover:text-white transition-colors'
                 >
                   {t('nav.pricing')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/case-studies'
-                  className='text-gray-300 hover:text-white transition-colors'
-                >
-                  {t('nav.caseStudies')}
                 </Link>
               </li>
             </ul>
@@ -95,14 +71,6 @@ export default function Footer() {
                 >
                   Telegram Channel
                 </a>
-              </li>
-              <li>
-                <Link
-                  href='/about'
-                  className='text-gray-300 hover:text-white transition-colors'
-                >
-                  {t('nav.about')}
-                </Link>
               </li>
               <li>
                 <Link

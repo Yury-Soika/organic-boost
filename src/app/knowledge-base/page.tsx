@@ -2,7 +2,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import Script from 'next/script';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function KnowledgeBasePage() {
@@ -219,7 +218,7 @@ export default function KnowledgeBasePage() {
                 {t('cta.telegram')}
               </Link>
               <Link
-                href='/contact'
+                href='https://t.me/organic_aso_support'
                 className='border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors'
               >
                 {t('cta.audit')}
