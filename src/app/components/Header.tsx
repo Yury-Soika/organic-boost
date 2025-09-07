@@ -33,24 +33,6 @@ export default function Header() {
               {t('nav.home')}
             </Link>
             <Link
-              href='/about'
-              className='text-text-secondary hover:text-primary transition-colors'
-            >
-              {t('nav.about')}
-            </Link>
-            <Link
-              href='/services'
-              className='text-text-secondary hover:text-primary transition-colors'
-            >
-              {t('nav.services')}
-            </Link>
-            <Link
-              href='/case-studies'
-              className='text-text-secondary hover:text-primary transition-colors'
-            >
-              {t('nav.caseStudies')}
-            </Link>
-            <Link
               href='/pricing'
               className='text-text-secondary hover:text-primary transition-colors'
             >
@@ -73,7 +55,10 @@ export default function Header() {
           {/* CTA Buttons & Language Switcher - Desktop */}
           <div className='hidden md:flex items-center space-x-4'>
             <LanguageSwitcher />
-            <Link href='/contact' className='btn-primary'>
+            <Link
+              href='https://t.me/organic_aso_support'
+              className='btn-primary'
+            >
               {t('nav.getStarted')}
             </Link>
           </div>
@@ -110,24 +95,6 @@ export default function Header() {
                 {t('nav.home')}
               </Link>
               <Link
-                href='/about'
-                className='text-text-secondary hover:text-primary transition-colors'
-              >
-                {t('nav.about')}
-              </Link>
-              <Link
-                href='/services'
-                className='text-text-secondary hover:text-primary transition-colors'
-              >
-                {t('nav.services')}
-              </Link>
-              <Link
-                href='/case-studies'
-                className='text-text-secondary hover:text-primary transition-colors'
-              >
-                {t('nav.caseStudies')}
-              </Link>
-              <Link
                 href='/pricing'
                 className='text-text-secondary hover:text-primary transition-colors'
               >
@@ -151,7 +118,7 @@ export default function Header() {
                   <LanguageSwitcher />
                 </div>
                 <Link
-                  href='/contact'
+                  href='https://t.me/organic_aso_support'
                   className='btn-primary w-full justify-center'
                 >
                   {t('nav.getStarted')}

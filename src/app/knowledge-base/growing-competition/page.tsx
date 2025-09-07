@@ -179,7 +179,7 @@ These factors work together to create a virtuous cycle of growth, where each qua
                       : 'Join Our Telegram'}
                   </Link>
                   <Link
-                    href='/contact'
+                    href='https://t.me/organic_aso_support'
                     className='border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center'
                   >
                     {language === 'ru'

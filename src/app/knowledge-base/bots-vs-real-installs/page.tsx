@@ -207,7 +207,7 @@ By combining advanced technology with our expertise, we provide a controlled, ef
                       : 'Contact on Telegram'}
                   </Link>
                   <Link
-                    href='/contact'
+                    href='https://t.me/organic_aso_support'
                     className='border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center'
                   >
                     {language === 'ru' ? 'Получить аудит' : 'Get Free Audit'}

@@ -206,38 +206,6 @@ export default function PricingPage() {
                     </div>
                     <span>{t('pricing.plans.growth.feature1')}</span>
                   </div>
-                  <div className='flex items-center space-x-3'>
-                    <div className='w-5 h-5 bg-primary rounded-full flex items-center justify-center'>
-                      <svg
-                        className='w-3 h-3 text-white'
-                        fill='currentColor'
-                        viewBox='0 0 20 20'
-                      >
-                        <path
-                          fillRule='evenodd'
-                          d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                          clipRule='evenodd'
-                        />
-                      </svg>
-                    </div>
-                    <span>{t('pricing.plans.growth.feature2')}</span>
-                  </div>
-                  <div className='flex items-center space-x-3'>
-                    <div className='w-5 h-5 bg-primary rounded-full flex items-center justify-center'>
-                      <svg
-                        className='w-3 h-3 text-white'
-                        fill='currentColor'
-                        viewBox='0 0 20 20'
-                      >
-                        <path
-                          fillRule='evenodd'
-                          d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                          clipRule='evenodd'
-                        />
-                      </svg>
-                    </div>
-                    <span>{t('pricing.plans.growth.feature3')}</span>
-                  </div>
                 </div>
 
                 <Link
@@ -433,10 +401,6 @@ export default function PricingPage() {
                     <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
                     <span>{t('services.aso.feature4')}</span>
                   </li>
-                  <li className='flex items-start space-x-3'>
-                    <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
-                    <span>Continuous optimization</span>
-                  </li>
                 </ul>
                 <Link
                   href='/contact'
@@ -444,67 +408,6 @@ export default function PricingPage() {
                 >
                   {t('nav.getStarted')}
                 </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className='py-16 px-6'>
-          <div className='max-w-4xl mx-auto'>
-            <div className='text-center mb-12'>
-              <h2 className='text-3xl font-bold mb-4'>
-                {t('pricing.faq.title')}
-              </h2>
-              <p className='text-xl text-text-secondary'>
-                {t('pricing.faq.subtitle')}
-              </p>
-            </div>
-
-            <div className='space-y-6'>
-              <div className='bg-white rounded-lg p-6 shadow-subtle'>
-                <h3 className='text-lg font-semibold mb-2'>
-                  {t('pricing.faq.q1.title')}
-                </h3>
-                <p className='text-text-secondary'>
-                  {t('pricing.faq.q1.answer')}
-                </p>
-              </div>
-
-              <div className='bg-white rounded-lg p-6 shadow-subtle'>
-                <h3 className='text-lg font-semibold mb-2'>
-                  {t('pricing.faq.q2.title')}
-                </h3>
-                <p className='text-text-secondary'>
-                  {t('pricing.faq.q2.answer')}
-                </p>
-              </div>
-
-              <div className='bg-white rounded-lg p-6 shadow-subtle'>
-                <h3 className='text-lg font-semibold mb-2'>
-                  {t('pricing.faq.q3.title')}
-                </h3>
-                <p className='text-text-secondary'>
-                  {t('pricing.faq.q3.answer')}
-                </p>
-              </div>
-
-              <div className='bg-white rounded-lg p-6 shadow-subtle'>
-                <h3 className='text-lg font-semibold mb-2'>
-                  {t('pricing.faq.q4.title')}
-                </h3>
-                <p className='text-text-secondary'>
-                  {t('pricing.faq.q4.answer')}
-                </p>
-              </div>
-
-              <div className='bg-white rounded-lg p-6 shadow-subtle'>
-                <h3 className='text-lg font-semibold mb-2'>
-                  {t('pricing.faq.q5.title')}
-                </h3>
-                <p className='text-text-secondary'>
-                  {t('pricing.faq.q5.answer')}
-                </p>
               </div>
             </div>
           </div>
@@ -531,7 +434,7 @@ export default function PricingPage() {
                 {t('cta.telegram')}
               </Link>
               <Link
-                href='/contact'
+                href='https://t.me/organic_aso_support'
                 className='border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors'
               >
                 {t('cta.audit')}
