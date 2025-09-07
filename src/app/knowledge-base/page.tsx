@@ -2,6 +2,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import Script from 'next/script';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function KnowledgeBasePage() {
@@ -17,9 +18,6 @@ export default function KnowledgeBasePage() {
             <h1 className='text-5xl lg:text-6xl font-bold mb-6'>
               <span className='text-primary'>{t('nav.knowledgeBase')}</span>
             </h1>
-            <p className='text-xl text-text-secondary max-w-3xl mx-auto mb-8'>
-              {t('knowledgeBase.subtitle')}
-            </p>
           </div>
         </section>
 
@@ -160,6 +158,46 @@ export default function KnowledgeBasePage() {
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+        </section>
+
+        {/* Telegram Posts Section */}
+        <section className='py-16 px-6 bg-surface'>
+          <div className='max-w-7xl mx-auto'>
+            <div className='text-center mb-12'>
+              <h2 className='text-3xl font-bold mb-4'>
+                Latest Updates from Our Channel
+              </h2>
+              <p className='text-xl text-text-secondary'>
+                Stay updated with the latest ASO insights and tips
+              </p>
+            </div>
+
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 h-[1205px]'>
+              {/* Telegram Post 1 */}
+              <iframe
+                src='https://t.me/organic_aso/35?embed=1'
+                width='100%'
+                height='100%'
+                className='rounded-xl'
+              ></iframe>
+
+              {/* Telegram Post 2 */}
+              <iframe
+                src='https://t.me/organic_aso/30?embed=1'
+                width='100%'
+                height='100%'
+                className='rounded-xl'
+              ></iframe>
+
+              {/* Telegram Post 3 */}
+              <iframe
+                src='https://t.me/organic_aso/34?embed=1'
+                width='100%'
+                height='100%'
+                className='rounded-xl'
+              ></iframe>
             </div>
           </div>
         </section>

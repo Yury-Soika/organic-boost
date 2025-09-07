@@ -17,9 +17,6 @@ export default function ServicesPage() {
             <h1 className='text-5xl lg:text-6xl font-bold mb-6'>
               {t('services.title')}
             </h1>
-            <p className='text-xl text-text-secondary max-w-3xl mx-auto mb-8'>
-              {t('services.subtitle')}
-            </p>
           </div>
         </section>
 

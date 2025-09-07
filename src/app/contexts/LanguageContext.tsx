@@ -58,9 +58,7 @@ const translations = {
     'features.locales.desc': 'global reach',
 
     // Services
-    'services.title': 'Our Services',
-    'services.subtitle':
-      'Comprehensive ASO and app promotion solutions that deliver real results.',
+    'services.title': 'Services and Prices',
 
     // Machine Installs Service
     'services.machineInstalls.title': 'Motivated Machine Installs',
@@ -73,14 +71,14 @@ const translations = {
 
     // ASO Service
     'services.aso.title': 'Complete ASO Support',
-    'services.aso.feature1': '🔑 Keyword research & optimization',
+    'services.aso.feature1': 'Keyword research & optimization',
     'services.aso.feature2':
-      '🖼 App Store listing optimization (texts, icons, screenshots)',
-    'services.aso.feature3': '🧪 Conversion rate optimization (CRO)',
-    'services.aso.feature4': '📊 Competitor analysis',
-    'services.aso.feature5': '🌍 Multi-locale campaigns',
-    'services.aso.feature6': '📈 Campaign management for app ranking growth',
-    'services.aso.feature7': '🗂 Performance monitoring & reporting',
+      'App Store listing optimization (texts, icons, screenshots)',
+    'services.aso.feature3': 'Conversion rate optimization (CRO)',
+    'services.aso.feature4': 'Competitor analysis',
+    'services.aso.feature5': 'Multi-locale campaigns',
+    'services.aso.feature6': 'Campaign management for app ranking growth',
+    'services.aso.feature7': 'Performance monitoring & reporting',
     'services.learnMore': 'Learn more →',
 
     // Services Page Additional Translations
@@ -313,12 +311,6 @@ const translations = {
     'cta.channel':
       'Subscribe to our Telegram channel for latest news — t.me/organic_aso_support',
 
-    // Knowledge Base
-    'knowledgeBase.title': 'Learn More About ASO',
-    'knowledgeBase.subtitle':
-      "Discover strategies, tips, and insights to boost your app's organic growth.",
-    'knowledgeBase.cta': 'Visit Knowledge Base',
-
     // Pricing
     'pricing.title': 'Services and Prices',
     'pricing.subtitle': 'Transparent pricing for predictable growth',
@@ -535,6 +527,10 @@ const translations = {
     'contact.form.platform': 'Platform',
     'contact.form.message': 'Message',
     'contact.form.budget': 'Budget',
+    'contact.form.budget.under500': 'Under $500',
+    'contact.form.budget.500to1000': '$500 - $1,000',
+    'contact.form.budget.1000to2000': '$1,000 - $2,000',
+    'contact.form.budget.over2000': 'Over $2,000',
     'contact.form.promoCode': 'Promo Code',
     'contact.form.promoCodeValue': 'ORGANIC15',
     'contact.form.submit': 'Send Message',
@@ -624,9 +620,7 @@ const translations = {
     'features.locales.desc': 'глобальный охват',
 
     // Services
-    'services.title': 'Услуги',
-    'services.subtitle':
-      'Комплексные решения ASO и продвижения приложений, которые дают реальные результаты.',
+    'services.title': 'Услуги и цены',
 
     // Machine Installs Service
     'services.machineInstalls.title': 'Мотивированные бото-установки',
@@ -642,15 +636,15 @@ const translations = {
 
     // ASO Service
     'services.aso.title': 'Полная поддержка ASO',
-    'services.aso.feature1': '🔑 Исследование и оптимизация ключевых слов',
+    'services.aso.feature1': 'Исследование и оптимизация ключевых слов',
     'services.aso.feature2':
-      '🖼 Оптимизация страницы в App Store (тексты, иконки, скриншоты)',
-    'services.aso.feature3': '🧪 Оптимизация конверсии (CRO)',
-    'services.aso.feature4': '📊 Анализ конкурентов',
-    'services.aso.feature5': '🌍 Мультилокальные кампании',
+      'Оптимизация страницы в App Store (тексты, иконки, скриншоты)',
+    'services.aso.feature3': 'Оптимизация конверсии (CRO)',
+    'services.aso.feature4': 'Анализ конкурентов',
+    'services.aso.feature5': 'Мультилокальные кампании',
     'services.aso.feature6':
-      '📈 Управление кампаниями для роста рейтинга приложения',
-    'services.aso.feature7': '🗂 Мониторинг эффективности и отчетность',
+      'Управление кампаниями для роста рейтинга приложения',
+    'services.aso.feature7': 'Мониторинг эффективности и отчетность',
     'services.learnMore': 'Узнать больше →',
 
     // Services Page Additional Translations
@@ -890,12 +884,6 @@ const translations = {
     'cta.channel':
       'Подписывайтесь на наш Telegram-канал, чтобы получать последние новости — t.me/organic_aso_support',
 
-    // Knowledge Base
-    'knowledgeBase.title': 'Узнайте больше об ASO',
-    'knowledgeBase.subtitle':
-      'Откройте стратегии, советы и идеи для повышения органического роста вашего приложения.',
-    'knowledgeBase.cta': 'Посетить базу знаний',
-
     // Pricing
     'pricing.title': 'Услуги и цены',
     'pricing.subtitle': 'Прозрачное ценообразование для предсказуемого роста',
@@ -1100,6 +1088,10 @@ const translations = {
     'contact.form.platform': 'Платформа',
     'contact.form.message': 'Сообщение',
     'contact.form.budget': 'Бюджет',
+    'contact.form.budget.under500': 'До $500',
+    'contact.form.budget.500to1000': '$500 - $1,000',
+    'contact.form.budget.1000to2000': '$1,000 - $2,000',
+    'contact.form.budget.over2000': 'Свыше $2,000',
     'contact.form.promoCode': 'Промокод',
     'contact.form.promoCodeValue': 'ORGANIC15',
     'contact.form.submit': 'Отправить сообщение',
