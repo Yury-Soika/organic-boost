@@ -143,33 +143,35 @@ const translations = {
       'This discount applies to all new clients and can be used on any service or package. Contact us on Telegram to redeem your discount.',
 
     // Knowledge Base Additional Translations
-    'kb.bots.title': 'Bot vs Real Users: Understanding the Difference',
+    'kb.bots.title': 'Bots vs. Real Installs: Which One Should You Choose?',
     'kb.bots.intro':
-      'Learn why real device installations are crucial for sustainable app growth and how to distinguish between bot traffic and genuine user activity.',
-    'kb.bots.quality.title': 'Quality Matters: Why Real Users Trump Bots',
+      "In recent years, mobile marketers increasingly face a choice between 'real' motivated installs and automated bot traffic. On the one hand, many associate bots with risks of sanctions and inefficiency. On the other, modern technologies make bots so 'human-like' that they pass Apple/Google checks as if they were genuine users.",
+    'kb.bots.quality.title': 'Different Qualities of Bot Traffic and the Risks',
     'kb.bots.quality.content':
-      "Real users provide authentic engagement patterns, genuine feedback, and sustainable growth. Bots may temporarily boost numbers but ultimately harm your app's reputation and long-term success.",
-    'kb.bots.highQuality.title': 'High-Quality Installations: What to Look For',
+      "Not all bots are created equal. There's a wide spectrum — from simple emulators to advanced server-based device farms. Low-quality bot farms often run on hundreds of identical devices, mass-clicking links and downloading apps. Such 'factories' are easy to detect: their device metadata (model, OS, IP address) overlap, new Device IDs appear in unnatural spikes, and analytics tools quickly flag them.",
+    'kb.bots.highQuality.title': 'High-Quality Bot Traffic: How It Works',
     'kb.bots.highQuality.content':
-      'Look for installations that come from real devices with unique identifiers, genuine user behavior patterns, and organic discovery methods. These installations contribute to sustainable ranking improvements.',
-    'kb.bots.comparison.title': 'Bot vs Real: A Detailed Comparison',
+      "Advanced solutions use real physical devices or their exact clones with unique identifiers. Each of our bots = a real device with its own IDFA/AAID and geolocation. That's why every install shows up in your Apple/Google console like any genuine user: the store pings the device, logs the event, and the install is counted as 100% valid.",
+    'kb.bots.comparison.title': 'Bots vs. Human Installers: The Key Difference',
     'kb.bots.comparison.content':
-      'Bots provide fake engagement, temporary boosts, and risk of detection. Real users offer authentic interactions, sustainable growth, and compliance with platform policies.',
+      'The biggest advantage of bots is predictability and precision. Human installers, though real, behave inconsistently: they may skip tasks, delete the app immediately after install, use direct links instead of searching by keywords, even leave negative reviews just to earn their reward faster.',
     'kb.readTime': '5 min read',
     'kb.readMore': 'Read Full Article →',
 
-    'kb.competition.title': 'Market Analysis: Understanding Your Competition',
+    'kb.competition.title':
+      'Growing Competition in the App Store and Google Play',
     'kb.competition.intro':
-      "Comprehensive guide to analyzing your app's competitive landscape and developing strategies to outperform your rivals.",
-    'kb.competition.economics.title': 'Competitive Economics: Cost vs Value',
+      'Every month, competition in mobile stores becomes more intense. No matter the niche, getting to the top positions for target keywords is becoming increasingly difficult. Standard ASO alone is no longer enough to generate large volumes of organic traffic.',
+    'kb.competition.economics.title':
+      'The Current State of Mobile App Competition',
     'kb.competition.economics.content':
-      'Understanding the economics of app store competition helps you allocate resources effectively and identify opportunities where your app can provide superior value.',
-    'kb.competition.keywords.title': 'Keyword Competition Analysis',
+      "Most competitors in the rankings are already using incentivized keyword installs. Some rely on them more, some less — but the ones who win are those who run traffic at the right scale and with the right strategy. However, it's important to understand: simply pouring traffic ≠ success.",
+    'kb.competition.keywords.title': 'The Economics of Growth',
     'kb.competition.keywords.content':
-      'Analyze keyword difficulty, search volume, and competitor strategies to identify high-opportunity keywords that can drive sustainable organic growth.',
-    'kb.competition.approach.title': 'Strategic Approach to Competition',
+      "To start generating +50–100 daily organic installs with Organic Boost, an average budget of $200–400 is enough. At this level, you'll already begin seeing the first subscription conversions and a return on your investment. From there, everything depends on campaign setup and your product itself.",
+    'kb.competition.approach.title': 'The Organic Boost Approach',
     'kb.competition.approach.content':
-      'Develop a systematic approach to monitoring competitors, identifying gaps in their strategies, and positioning your app to capture market share.',
+      "At Organic Boost, we always follow a proven strategy: Test multiple keywords → keep only those that bring real paying users. Gradually scale campaigns → maintaining positive unit economics while growing traffic. As a result, our clients don't just buy installs — they get a self-sustaining growth system.",
     'kb.competition.try.title': 'Try Our Competitive Analysis',
     'kb.competition.try.content':
       "Ready to outperform your competition? Get a free competitive analysis and discover opportunities to improve your app's market position.",
@@ -447,37 +449,36 @@ const translations = {
       'Эта скидка применяется ко всем новым клиентам и может быть использована на любую услугу или пакет. Свяжитесь с нами в Telegram, чтобы получить скидку.',
 
     // Knowledge Base Additional Translations
-    // Knowledge Base Additional Translations
-    'kb.bots.title': 'Боты vs Реальные пользователи: Понимание разницы',
+    'kb.bots.title': 'Боты vs. живые установки: что выбрать?',
     'kb.bots.intro':
-      'Узнайте, почему установки на реальные устройства критически важны для устойчивого роста приложения и как отличить трафик ботов от подлинной активности пользователей.',
-    'kb.bots.quality.title':
-      'Качество имеет значение: Почему реальные пользователи лучше ботов',
+      'В последние годы мобильные маркетологи всё чаще сталкиваются с выбором между «живыми» мотивированными установками и автоматизированным бот-трафиком. С одной стороны, бототрафик многие ассоциируют с риском санкций и неэффективностью, однако современные технологии позволяют делать ботов настолько «человечными», что они проходят проверки Apple/Google как настоящие пользователи.',
+    'kb.bots.quality.title': 'Разное качество бот-трафика и риски',
     'kb.bots.quality.content':
-      'Реальные пользователи обеспечивают аутентичные паттерны взаимодействия, подлинную обратную связь и устойчивый рост. Боты могут временно увеличить цифры, но в конечном итоге вредят репутации вашего приложения и долгосрочному успеху.',
+      'Не все боты одинаковы. Существует целый спектр решений — от простых эмуляторов до продвинутых серверных ферм. Низкокачественные бот-фермы часто работают на сотнях однотипных устройств, массово щёлкая по ссылкам и устанавливая приложение. Такие «фабрики» легко вычислить: у них сходятся идентичные метаданные устройств (модель, ОС, IP-адрес) и всплески новых Device ID.',
     'kb.bots.highQuality.title':
-      'Высококачественные установки: На что обращать внимание',
+      'Высококачественный бот-трафик: как это работает',
     'kb.bots.highQuality.content':
-      'Ищите установки, которые происходят с реальных устройств с уникальными идентификаторами, подлинными паттернами поведения пользователей и органическими методами обнаружения. Эти установки способствуют устойчивому улучшению рейтинга.',
-    'kb.bots.comparison.title': 'Боты vs Реальные: Детальное сравнение',
+      'Продвинутые решения используют реальные физические устройства или их точные клоны с уникальными идентификаторами. Каждый наш бот — это реальное устройство с собственным IDFA/AAID и геолокацией. Благодаря этому установка в вашем Apple/Google консоли проходит так же, как и обычная: устройство пингуется магазином, отправляет «приёмник установки», и «install»-событие считается "честным".',
+    'kb.bots.comparison.title': 'Боты vs. живые исполнители: в чём отличие',
     'kb.bots.comparison.content':
-      'Боты обеспечивают фальшивое взаимодействие, временные подъемы и риск обнаружения. Реальные пользователи предлагают аутентичные взаимодействия, устойчивый рост и соответствие политикам платформы.',
+      'Главное достоинство наших ботов — устойчивое и предсказуемое выполнение задачи. Человеческие исполнители, хоть они и реальные, ведут себя непредсказуемо: могут пропустить часть заданий, установить и тут же удалить приложение, войти по прямой ссылке в магазин или даже оставить отрицательную оценку ради быстрого бонуса.',
     'kb.readTime': '5 мин чтения',
     'kb.readMore': 'Читать полную статью →',
 
-    'kb.competition.title': 'Анализ рынка: Понимание вашей конкуренции',
+    'kb.competition.title':
+      'Конкуренция в App Store и Google Play растет каждый месяц',
     'kb.competition.intro':
-      'Комплексное руководство по анализу конкурентного ландшафта вашего приложения и разработке стратегий для превосходства над конкурентами.',
+      'Сегодня любая ниша в мобильных сторах становится все более насыщенной. Конкурировать за топовые позиции по ключевым запросам становится сложнее: просто комплексного ASO уже недостаточно, чтобы получать много органического трафика.',
     'kb.competition.economics.title':
-      'Конкурентная экономика: Стоимость vs Ценность',
+      'Текущее состояние конкуренции в мобильных приложениях',
     'kb.competition.economics.content':
-      'Понимание экономики конкуренции в App Store помогает эффективно распределять ресурсы и выявлять возможности, где ваше приложение может обеспечить превосходную ценность.',
-    'kb.competition.keywords.title': 'Анализ конкуренции по ключевым словам',
+      'Большинство конкурентов в выдаче используют мотивированные установки по ключам. Кто-то использует это больше, кто-то меньше, но выигрывает тот, кто льет трафик и правильно, и в нужных объемах. Однако важно понимать: налить трафик ≠ победить.',
+    'kb.competition.keywords.title': 'Экономика роста',
     'kb.competition.keywords.content':
-      'Анализируйте сложность ключевых слов, объем поиска и стратегии конкурентов, чтобы выявлять ключевые слова с высокими возможностями, которые могут обеспечить устойчивый органический рост.',
-    'kb.competition.approach.title': 'Стратегический подход к конкуренции',
+      'Чтобы начать привлекать +50–100 живых органических установок в день с Organic Boost, в среднем достаточно бюджета $200–400. Уже на этом объёме можно увидеть первые конверсии в подписку и начать возвращать вложенные деньги. Дальше всё упирается в настройки рекламной кампании и сам продукт.',
+    'kb.competition.approach.title': 'Подход Organic Boost',
     'kb.competition.approach.content':
-      'Разработайте систематический подход к мониторингу конкурентов, выявлению пробелов в их стратегиях и позиционированию вашего приложения для захвата доли рынка.',
+      'Organic Boost всегда работает по методу: тестируем разные ключевые слова и оставляем только те, что приносят реальных платящих пользователей, масштабируем кампанию постепенно, чтобы удерживать положительную юнит-экономику. В итоге заказчик получает не просто установки, а рабочую систему привлечения, которая сама себя окупает и масштабируется без потерь.',
     'kb.competition.try.title': 'Попробуйте наш анализ конкуренции',
     'kb.competition.try.content':
       'Готовы превзойти ваших конкурентов? Получите бесплатный анализ конкуренции и откройте возможности для улучшения рыночной позиции вашего приложения.',
