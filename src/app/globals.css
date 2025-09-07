@@ -20,6 +20,27 @@
     @apply bg-white text-primary border border-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-all duration-200 inline-flex items-center gap-2;
   }
 
+  .telegram-iframe {
+    overflow: hidden !important;
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE/Edge */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .telegram-iframe::-webkit-scrollbar {
+    display: none !important; /* Chrome/Safari */
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .telegram-iframe::-webkit-scrollbar-track {
+    display: none !important;
+  }
+
+  .telegram-iframe::-webkit-scrollbar-thumb {
+    display: none !important;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
