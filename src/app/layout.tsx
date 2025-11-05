@@ -32,6 +32,22 @@ export default function RootLayout({
         <link rel='preconnect' href='https://mc.yandex.ru' />
         <link rel='preconnect' href='https://cdn.consentmanager.net' />
         <link rel='icon' href='/favicon.ico' />
+        {/* Yandex.Metrika counter */}
+        <script
+          type='text/javascript'
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(m,e,t,r,i,k,a){
+                  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                  m[i].l=1*new Date();
+                  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+              })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105126183', 'ym');
+              ym(105126183, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+            `,
+          }}
+        />
+        {/* /Yandex.Metrika counter */}
       </head>
       <body className={`${inter.className} bg-background text-text-primary`}>
         {/* Cookie Consent Manager - Loads early in <head> to block other scripts until consent */}
@@ -59,18 +75,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Yandex Metrika - Loads after page interaction for optimal performance */}
-        <Script id='yandex-metrika' strategy='afterInteractive'>
-          {`
-            (function(m,e,t,r,i,k,a){
-                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-            })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105126183', 'ym');
-            ym(105126183, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-          `}
-        </Script>
+        {/* Yandex Metrika noscript fallback */}
         <noscript>
           <div>
             <img
