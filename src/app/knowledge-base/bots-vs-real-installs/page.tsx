@@ -7,13 +7,11 @@ import { useLanguage } from '../../contexts/LanguageContext';
 export default function BotsVsRealInstallsPage() {
   const { t, language } = useLanguage();
 
+  // Article sections content (full article text - kept local as it's very long)
   const content = {
     en: {
-      title: 'Bots vs. Real Installs: Which One Should You Choose?',
       subtitle:
         'Understanding the differences between automated and human-driven app promotion strategies',
-      intro:
-        "In recent years, mobile marketers increasingly face a choice between 'real' motivated installs and automated bot traffic. On the one hand, many associate bots with risks of sanctions and inefficiency. On the other, modern technologies make bots so 'human-like' that they pass Apple/Google checks as if they were genuine users.",
       sections: [
         {
           title: 'Different Qualities of Bot Traffic and the Risks',
@@ -86,11 +84,8 @@ By combining advanced technology with our expertise, we provide a controlled, ef
       ],
     },
     ru: {
-      title: 'Боты vs. живые установки: что выбрать?',
       subtitle:
         'Понимание различий между автоматизированными и человеческими стратегиями продвижения приложений',
-      intro:
-        'В последние годы мобильные маркетологи всё чаще сталкиваются с выбором между «живыми» мотивированными установками и автоматизированным бот-трафиком. С одной стороны, бототрафик многие ассоциируют с риском санкций и неэффективностью, однако современные технологии позволяют делать ботов настолько «человечными», что они проходят проверки Apple/Google как настоящие пользователи.',
       sections: [
         {
           title: 'Разное качество бот-трафика и риски',
@@ -154,11 +149,11 @@ By combining advanced technology with our expertise, we provide a controlled, ef
                 href='/knowledge-base'
                 className='text-primary hover:text-primary-700 font-medium'
               >
-                ← Back to Knowledge Base
+                {t('kb.article.back')}
               </Link>
             </div>
             <h1 className='text-4xl lg:text-5xl font-bold mb-6'>
-              {currentContent.title}
+              {t('kb.bots.title')}
             </h1>
             <p className='text-xl text-text-secondary'>
               {currentContent.subtitle}
@@ -171,7 +166,7 @@ By combining advanced technology with our expertise, we provide a controlled, ef
           <div className='max-w-4xl mx-auto'>
             <article className='prose prose-lg max-w-none'>
               <p className='text-xl text-text-secondary mb-12 leading-relaxed'>
-                {currentContent.intro}
+                {t('kb.bots.intro')}
               </p>
 
               {currentContent.sections.map((section, index) => (
@@ -188,29 +183,23 @@ By combining advanced technology with our expertise, we provide a controlled, ef
               {/* CTA Section */}
               <div className='bg-primary-50 rounded-xl p-8 mt-12'>
                 <h3 className='text-xl font-bold mb-4 text-primary'>
-                  {language === 'ru'
-                    ? 'Готовы начать?'
-                    : 'Ready to get started?'}
+                  {t('kb.article.ready.title')}
                 </h3>
                 <p className='text-text-secondary mb-6'>
-                  {language === 'ru'
-                    ? 'Свяжитесь с нами в Telegram и получите бесплатный аудит вашего приложения.'
-                    : 'Contact us on Telegram and get a free audit of your app.'}
+                  {t('kb.article.ready.content')}
                 </p>
                 <div className='flex flex-col sm:flex-row gap-4'>
                   <Link
                     href='https://t.me/organic_aso'
                     className='bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center'
                   >
-                    {language === 'ru'
-                      ? 'Связаться в Telegram'
-                      : 'Contact on Telegram'}
+                    {t('cta.telegram')}
                   </Link>
                   <Link
                     href='https://t.me/organic_aso_support'
                     className='border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center'
                   >
-                    {language === 'ru' ? 'Получить аудит' : 'Get Free Audit'}
+                    {t('cta.audit')}
                   </Link>
                 </div>
               </div>

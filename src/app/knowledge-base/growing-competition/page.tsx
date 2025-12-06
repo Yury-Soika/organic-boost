@@ -3,17 +3,18 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { translations } from '../../contexts/LanguageContext';
 
 export default function GrowingCompetitionPage() {
   const { t, language } = useLanguage();
 
+  // Use translations from LanguageContext for title and intro to keep in sync with listing page
   const content = {
     en: {
-      title: 'Growing Competition in the App Store and Google Play',
+      title: translations.en['kb.competition.title'], // Uses translation from LanguageContext
       subtitle:
         "Understanding the challenges and opportunities in today's mobile app market",
-      intro:
-        'Every month, competition in mobile stores becomes more intense. No matter the niche, getting to the top positions for target keywords is becoming increasingly difficult. Standard ASO alone is no longer enough to generate large volumes of organic traffic.',
+      intro: translations.en['kb.competition.intro'], // Uses translation from LanguageContext
       sections: [
         {
           title: 'The Current State of Mobile App Competition',
@@ -62,11 +63,10 @@ These factors work together to create a virtuous cycle of growth, where each qua
       ],
     },
     ru: {
-      title: 'Конкуренция в App Store и Google Play растет каждый месяц',
+      title: translations.ru['kb.competition.title'], // Uses translation from LanguageContext
       subtitle:
         'Понимание вызовов и возможностей в современном рынке мобильных приложений',
-      intro:
-        'Сегодня любая ниша в мобильных сторах становится все более насыщенной. Конкурировать за топовые позиции по ключевым запросам становится сложнее: просто комплексного ASO уже недостаточно, чтобы получать много органического трафика.',
+      intro: translations.ru['kb.competition.intro'], // Uses translation from LanguageContext
       sections: [
         {
           title: 'Текущее состояние конкуренции в мобильных приложениях',
@@ -128,7 +128,7 @@ These factors work together to create a virtuous cycle of growth, where each qua
                 href='/knowledge-base'
                 className='text-primary hover:text-primary-700 font-medium'
               >
-                ← Back to Knowledge Base
+                {t('kb.article.back')}
               </Link>
             </div>
             <h1 className='text-4xl lg:text-5xl font-bold mb-6'>
@@ -162,29 +162,23 @@ These factors work together to create a virtuous cycle of growth, where each qua
               {/* CTA Section */}
               <div className='bg-primary-50 rounded-xl p-8 mt-12'>
                 <h3 className='text-xl font-bold mb-4 text-primary'>
-                  {language === 'ru' ? 'Попробуйте сами' : 'Try It Yourself'}
+                  {t('kb.competition.cta.title')}
                 </h3>
                 <p className='text-text-secondary mb-6'>
-                  {language === 'ru'
-                    ? 'Вы можете убедиться в этом сами: переходите в наш Telegram-канал и получите 300 бесплатных установок на тест — наглядно оцените результат.'
-                    : "You don't have to take our word for it — you can see results in practice. Join our Telegram channel and claim 300 free test installs to evaluate the impact firsthand."}
+                  {t('kb.competition.cta.content')}
                 </p>
                 <div className='flex flex-col sm:flex-row gap-4'>
                   <Link
                     href='https://t.me/organic_aso'
                     className='bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center'
                   >
-                    {language === 'ru'
-                      ? 'Перейти в наш Telegram'
-                      : 'Join Our Telegram'}
+                    {t('kb.competition.cta.telegram')}
                   </Link>
                   <Link
                     href='https://t.me/organic_aso_support'
                     className='border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center'
                   >
-                    {language === 'ru'
-                      ? 'Получить бесплатный аудит'
-                      : 'Get Free Audit'}
+                    {t('kb.competition.cta.audit')}
                   </Link>
                 </div>
               </div>

@@ -13,8 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
 
-// Translation data
-const translations = {
+export const translations = {
   en: {
     // Header
     'nav.home': 'Home',
@@ -156,7 +155,17 @@ const translations = {
     'kb.bots.comparison.content':
       'The biggest advantage of bots is predictability and precision. Human installers, though real, behave inconsistently: they may skip tasks, delete the app immediately after install, use direct links instead of searching by keywords, even leave negative reviews just to earn their reward faster.',
     'kb.readTime': '5 min read',
+    'kb.readTime.short': '4 min read',
     'kb.readMore': 'Read Full Article →',
+    'kb.category.asoStrategy': 'ASO Strategy',
+    'kb.category.marketAnalysis': 'Market Analysis',
+    'kb.telegram.title': 'Latest Updates from Our Channel',
+    'kb.telegram.subtitle':
+      'Stay updated with the latest ASO insights and tips',
+    'kb.article.back': '← Back to Knowledge Base',
+    'kb.article.ready.title': 'Ready to get started?',
+    'kb.article.ready.content':
+      'Contact us on Telegram and get a free audit of your app.',
 
     'kb.competition.title':
       'Growing Competition in the App Store and Google Play',
@@ -175,6 +184,11 @@ const translations = {
     'kb.competition.try.title': 'Try Our Competitive Analysis',
     'kb.competition.try.content':
       "Ready to outperform your competition? Get a free competitive analysis and discover opportunities to improve your app's market position.",
+    'kb.competition.cta.title': 'Try It Yourself',
+    'kb.competition.cta.content':
+      "You don't have to take our word for it — you can see results in practice. Join our Telegram channel and claim 300 free test installs to evaluate the impact firsthand.",
+    'kb.competition.cta.telegram': 'Join Our Telegram',
+    'kb.competition.cta.audit': 'Get Free Audit',
 
     // How It Works
     'howItWorks.title': 'How It Works',
@@ -200,8 +214,6 @@ const translations = {
       'Use promo code ORGANIC15 and get -15% on your first order!',
     'cta.telegram': 'Contact on Telegram',
     'cta.audit': 'Get Free Audit',
-    'cta.channel':
-      'Subscribe to our Telegram channel for latest news — t.me/organic_aso_support',
 
     // Knowledge Base
     'knowledgeBase.title': 'Learn More About ASO',
@@ -242,28 +254,12 @@ const translations = {
     // Contact Page
     'contact.title': 'Contact Us',
     'contact.subtitle': "Ready to boost your app? Let's discuss your project.",
-    'contact.telegram.title': 'Contact on Telegram',
-    'contact.telegram.desc':
-      'Fastest way to get in touch and start your project.',
-    'contact.telegram.button': 'Open Telegram',
-    'contact.email.title': 'Email Us',
-    'contact.email.desc': 'For detailed proposals and business inquiries.',
-    'contact.email.button': 'Send Email',
     'contact.info.title': 'Get in Touch',
-    'contact.info.desc':
-      "We're here to help you grow your app. Reach out and let's discuss how we can boost your app's performance.",
-    'contact.info.telegram': 'Telegram: @organic_aso',
-    'contact.info.email': 'Email: hello@organicboost.com',
-    'contact.info.response': 'We respond within 2 hours',
-    'contact.cta.title': 'Ready to start?',
-    'contact.cta.subtitle':
-      'Join hundreds of successful apps that trust Organic Boost.',
-    'contact.cta.button': 'Start Your Project',
 
     // Contact Form
     'contact.form.title': 'Get in Touch',
-    'contact.form.name': 'Name *',
-    'contact.form.email': 'Email *',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
     'contact.form.appName': 'App Name',
     'contact.form.platform': 'Platform',
     'contact.form.message': 'Message',
@@ -273,17 +269,25 @@ const translations = {
     'contact.form.budget.1000to2000': '$1,000 - $2,000',
     'contact.form.budget.over2000': 'Over $2,000',
     'contact.form.promoCode': 'Promo Code',
-    'contact.form.promoCodeValue': 'ORGANIC15',
     'contact.form.submit': 'Send Message',
+    'contact.form.submitting': 'Sending...',
+    'contact.form.success.title': 'Message Sent Successfully!',
+    'contact.form.success.desc':
+      'Thank you for contacting us. We will get back to you within 2 hours.',
+    'contact.form.success.button': 'Contact on Telegram',
+    'contact.form.platform.ios': 'iOS',
+    'contact.form.platform.android': 'Android',
+    'contact.form.platform.both': 'Both',
 
     // Contact Info
     'contact.info.telegram.title': 'Contact on Telegram',
     'contact.info.telegram.desc':
       'Fastest way to get in touch and start your project.',
-    'contact.info.telegram.link': 't.me/organic_aso',
     'contact.info.email.title': 'Email Us',
     'contact.info.email.desc': 'For detailed proposals and business inquiries.',
-    'contact.info.email.link': 'hello@organicboost.com',
+    'contact.info.phone.title': 'Call Us',
+    'contact.info.phone.desc':
+      'Reach us directly by phone for immediate assistance.',
     'contact.info.response.title': 'Quick Response',
     'contact.info.response.desc': 'We respond within 2 hours',
     'contact.info.support.title': '24/7 Support',
@@ -463,7 +467,17 @@ const translations = {
     'kb.bots.comparison.content':
       'Главное достоинство наших ботов — устойчивое и предсказуемое выполнение задачи. Человеческие исполнители, хоть они и реальные, ведут себя непредсказуемо: могут пропустить часть заданий, установить и тут же удалить приложение, войти по прямой ссылке в магазин или даже оставить отрицательную оценку ради быстрого бонуса.',
     'kb.readTime': '5 мин чтения',
+    'kb.readTime.short': '4 мин чтения',
     'kb.readMore': 'Читать полную статью →',
+    'kb.category.asoStrategy': 'ASO Стратегия',
+    'kb.category.marketAnalysis': 'Анализ рынка',
+    'kb.telegram.title': 'Последние обновления из нашего канала',
+    'kb.telegram.subtitle':
+      'Будьте в курсе последних новостей и советов по ASO',
+    'kb.article.back': '← Вернуться к базе знаний',
+    'kb.article.ready.title': 'Готовы начать?',
+    'kb.article.ready.content':
+      'Свяжитесь с нами в Telegram и получите бесплатный аудит вашего приложения.',
 
     'kb.competition.title':
       'Конкуренция в App Store и Google Play растет каждый месяц',
@@ -482,6 +496,11 @@ const translations = {
     'kb.competition.try.title': 'Попробуйте наш анализ конкуренции',
     'kb.competition.try.content':
       'Готовы превзойти ваших конкурентов? Получите бесплатный анализ конкуренции и откройте возможности для улучшения рыночной позиции вашего приложения.',
+    'kb.competition.cta.title': 'Попробуйте сами',
+    'kb.competition.cta.content':
+      'Вы можете убедиться в этом сами: переходите в наш Telegram-канал и получите 300 бесплатных установок на тест — наглядно оцените результат.',
+    'kb.competition.cta.telegram': 'Перейти в наш Telegram',
+    'kb.competition.cta.audit': 'Получить бесплатный аудит',
     // How It Works
     'howItWorks.title': 'Как это работает',
     'howItWorks.subtitle':
@@ -508,8 +527,6 @@ const translations = {
       'Используйте промокод ORGANIC15 и получите -15% на первый заказ!',
     'cta.telegram': 'Связаться в Telegram',
     'cta.audit': 'Получить бесплатный аудит',
-    'cta.channel':
-      'Подписывайтесь на наш Telegram-канал, чтобы получать последние новости — t.me/organic_aso_support',
 
     // Knowledge Base
     'knowledgeBase.title': 'Узнайте больше об ASO',
@@ -533,28 +550,12 @@ const translations = {
     'contact.title': 'Свяжитесь с нами',
     'contact.subtitle':
       'Готовы бустить ваше приложение? Давайте обсудим ваш проект.',
-    'contact.telegram.title': 'Связаться в Telegram',
-    'contact.telegram.desc':
-      'Самый быстрый способ связаться и начать ваш проект.',
-    'contact.telegram.button': 'Открыть Telegram',
-    'contact.email.title': 'Напишите нам',
-    'contact.email.desc': 'Для детальных предложений и деловых запросов.',
-    'contact.email.button': 'Отправить email',
     'contact.info.title': 'Свяжитесь с нами',
-    'contact.info.desc':
-      'Мы здесь, чтобы помочь вам развивать ваше приложение. Обратитесь к нам, и давайте обсудим, как мы можем улучшить производительность вашего приложения.',
-    'contact.info.telegram': 'Telegram: @organic_aso',
-    'contact.info.email': 'Email: hello@organicboost.com',
-    'contact.info.response': 'Мы отвечаем в течение 2 часов',
-    'contact.cta.title': 'Готовы начать?',
-    'contact.cta.subtitle':
-      'Присоединяйтесь к сотням успешных приложений, которые доверяют Organic Boost.',
-    'contact.cta.button': 'Начать проект',
 
     // Contact Form
     'contact.form.title': 'Свяжитесь с нами',
-    'contact.form.name': 'Имя *',
-    'contact.form.email': 'Email *',
+    'contact.form.name': 'Имя',
+    'contact.form.email': 'Email',
     'contact.form.appName': 'Название приложения',
     'contact.form.platform': 'Платформа',
     'contact.form.message': 'Сообщение',
@@ -564,17 +565,25 @@ const translations = {
     'contact.form.budget.1000to2000': '$1,000 - $2,000',
     'contact.form.budget.over2000': 'Свыше $2,000',
     'contact.form.promoCode': 'Промокод',
-    'contact.form.promoCodeValue': 'ORGANIC15',
     'contact.form.submit': 'Отправить сообщение',
+    'contact.form.submitting': 'Отправка...',
+    'contact.form.success.title': 'Сообщение успешно отправлено!',
+    'contact.form.success.desc':
+      'Спасибо за обращение. Мы свяжемся с вами в течение 2 часов.',
+    'contact.form.success.button': 'Связаться в Telegram',
+    'contact.form.platform.ios': 'iOS',
+    'contact.form.platform.android': 'Android',
+    'contact.form.platform.both': 'Оба',
 
     // Contact Info
     'contact.info.telegram.title': 'Связаться в Telegram',
     'contact.info.telegram.desc':
       'Самый быстрый способ связаться и начать ваш проект.',
-    'contact.info.telegram.link': 't.me/organic_aso',
     'contact.info.email.title': 'Напишите нам',
     'contact.info.email.desc': 'Для детальных предложений и деловых запросов.',
-    'contact.info.email.link': 'hello@organicboost.com',
+    'contact.info.phone.title': 'Позвоните нам',
+    'contact.info.phone.desc':
+      'Свяжитесь с нами напрямую по телефону для немедленной помощи.',
     'contact.info.response.title': 'Быстрый ответ',
     'contact.info.response.desc': 'Мы отвечаем в течение 2 часов',
     'contact.info.support.title': 'Поддержка 24/7',

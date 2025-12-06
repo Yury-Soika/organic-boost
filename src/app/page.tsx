@@ -178,7 +178,7 @@ export default function HomePage() {
             </div>
 
             {/* Features List */}
-            <div className='flex flex-wrap justify-between items-center mt-24 text-center w-full'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mt-24 text-center w-full'>
               <div className='flex flex-col items-center space-y-3'>
                 <div className='w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0'>
                   <svg
@@ -555,20 +555,11 @@ export default function HomePage() {
                 {t('cta.telegram')}
               </Link>
               <Link
-                href='https://t.me/organic_aso_support'
+                href='/contact'
                 className='border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors'
               >
                 {t('cta.audit')}
               </Link>
-            </div>
-            <div className='mt-8 text-sm opacity-80'>
-              <p>{t('cta.channel')}</p>
-              <a
-                href='https://t.me/organic_aso_support'
-                className='underline hover:no-underline'
-              >
-                t.me/organic_aso_support
-              </a>
             </div>
           </div>
         </section>

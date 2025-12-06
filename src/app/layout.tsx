@@ -3,14 +3,106 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { LanguageProvider } from './contexts/LanguageContext';
+import StructuredData from './components/StructuredData';
+import FAQSchema from './components/FAQSchema';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title:
-    "Organic Boost - Boost your app's growth with installs that really work",
+  metadataBase: new URL('https://organicaso.com'),
+  title: {
+    default:
+      'Organic Boost - ASO Agency | App Store Optimization & Motivated App Installs',
+    template: '%s | Organic Boost',
+  },
   description:
-    'Affordable, predictable and effective ASO & machine-motivated installs for iOS and Android. 2M+ installs generated, 120+ apps promoted.',
+    'Professional ASO agency specializing in App Store Optimization, motivated app installs, and keyword ranking boost for iOS and Android. 2M+ installs generated, 120+ apps promoted. Get organic growth for your mobile app.',
+  keywords: [
+    'ASO agency',
+    'ASO service',
+    'app store optimization',
+    'motivated app installs',
+    'app growth agency',
+    'iOS app promotion',
+    'Android app promotion',
+    'keyword ranking boost',
+    'app store keyword boost',
+    'organic app growth',
+    'boost app ranking',
+    'buy app installs',
+    'best ASO company',
+    'mobile app marketing',
+    'app store ranking',
+    'ASO агентство',
+    'продвижение приложений iOS',
+    'мотивированный трафик iOS',
+    'боты для App Store',
+    'продвижение по ключам App Store',
+    'буст позиций приложения',
+    'органический рост приложения',
+    'продвижение мобильных приложений',
+    'установка по ключевым словам',
+    'вывод приложения в топ',
+  ],
+  authors: [{ name: 'Organic Boost' }],
+  creator: 'Organic Boost',
+  publisher: 'Organic Boost',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    alternateLocale: ['ru_RU'],
+    url: 'https://organicaso.com',
+    siteName: 'Organic Boost',
+    title:
+      'Organic Boost - ASO Agency | App Store Optimization & Motivated App Installs',
+    description:
+      'Professional ASO agency specializing in App Store Optimization, motivated app installs, and keyword ranking boost for iOS and Android. 2M+ installs generated, 120+ apps promoted.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Organic Boost - ASO Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Organic Boost - ASO Agency | App Store Optimization & Motivated App Installs',
+    description:
+      'Professional ASO agency specializing in App Store Optimization, motivated app installs, and keyword ranking boost for iOS and Android.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://organicaso.com',
+    languages: {
+      'en-US': 'https://organicaso.com',
+      'ru-RU': 'https://organicaso.com/ru',
+      'x-default': 'https://organicaso.com',
+    },
+  },
+  verification: {
+    google: 'googlef515f28ccb88eb61',
+    yandex: '60b51aa0c6a37ac8',
+  },
+  category: 'Technology',
 };
 
 export default function RootLayout({
@@ -48,8 +140,13 @@ export default function RootLayout({
           }}
         />
         {/* /Yandex.Metrika counter */}
+        <StructuredData />
+        <FAQSchema />
       </head>
-      <body className={`${inter.className} bg-background text-text-primary`}>
+      <body
+        className={`${inter.className} bg-background text-text-primary`}
+        suppressHydrationWarning
+      >
         {/* Cookie Consent Manager - Loads early in <head> to block other scripts until consent */}
         <Script
           type='text/javascript'

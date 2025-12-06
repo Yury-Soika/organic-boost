@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import Logo from './Logo';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,16 +14,7 @@ export default function Header() {
       <nav className='max-w-7xl mx-auto px-6 py-4'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
-          <Link href='/' className='flex items-center space-x-3'>
-            <img
-              src='/logo.png'
-              alt='Organic Boost'
-              className='w-10 h-10 object-contain rounded-lg'
-            />
-            <span className='text-xl font-bold text-primary'>
-              Organic Boost
-            </span>
-          </Link>
+          <Logo size={40} showText={true} />
 
           {/* Navigation Links - Desktop */}
           <div className='hidden md:flex items-center space-x-8'>
@@ -55,10 +47,7 @@ export default function Header() {
           {/* CTA Buttons & Language Switcher - Desktop */}
           <div className='hidden md:flex items-center space-x-4'>
             <LanguageSwitcher />
-            <Link
-              href='https://t.me/organic_aso_support'
-              className='btn-primary'
-            >
+            <Link href='/contact' className='btn-primary'>
               {t('nav.getStarted')}
             </Link>
           </div>
@@ -118,7 +107,7 @@ export default function Header() {
                   <LanguageSwitcher />
                 </div>
                 <Link
-                  href='https://t.me/organic_aso_support'
+                  href='/contact'
                   className='btn-primary w-full justify-center'
                 >
                   {t('nav.getStarted')}

@@ -28,7 +28,7 @@ export default function KnowledgeBasePage() {
               <article className='bg-white rounded-xl p-8 shadow-subtle'>
                 <div className='mb-6'>
                   <span className='bg-primary-100 text-primary px-3 py-1 rounded-full text-sm font-semibold'>
-                    ASO Strategy
+                    {t('kb.category.asoStrategy')}
                   </span>
                 </div>
                 <h2 className='text-2xl font-bold mb-4'>
@@ -62,9 +62,9 @@ export default function KnowledgeBasePage() {
                   <div className='flex items-start space-x-3'>
                     <div className='w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0'></div>
                     <div>
-                      <h4 className='font-semibold'>
+                      {/* <h4 className='font-semibold'>
                         {t('kb.bots.comparison.title')}
-                      </h4>
+                      </h4> */}
                       <p className='text-text-secondary text-sm'>
                         {t('kb.bots.comparison.content').substring(0, 100)}...
                       </p>
@@ -75,13 +75,13 @@ export default function KnowledgeBasePage() {
                 <div className='border-t border-border pt-6'>
                   <div className='flex items-center justify-between'>
                     <span className='text-sm text-text-secondary'>
-                      5 min read
+                      {t('kb.readTime')}
                     </span>
                     <Link
                       href='/knowledge-base/bots-vs-real-installs'
                       className='text-primary hover:text-primary-700 font-medium'
                     >
-                      Read Full Article →
+                      {t('kb.readMore')}
                     </Link>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export default function KnowledgeBasePage() {
               <article className='bg-white rounded-xl p-8 shadow-subtle'>
                 <div className='mb-6'>
                   <span className='bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm font-semibold'>
-                    Market Analysis
+                    {t('kb.category.marketAnalysis')}
                   </span>
                 </div>
                 <h2 className='text-2xl font-bold mb-4'>
@@ -146,13 +146,13 @@ export default function KnowledgeBasePage() {
                 <div className='border-t border-border pt-6'>
                   <div className='flex items-center justify-between'>
                     <span className='text-sm text-text-secondary'>
-                      4 min read
+                      {t('kb.readTime.short')}
                     </span>
                     <Link
                       href='/knowledge-base/growing-competition'
                       className='text-primary hover:text-primary-700 font-medium'
                     >
-                      Read Full Article →
+                      {t('kb.readMore')}
                     </Link>
                   </div>
                 </div>
@@ -166,10 +166,10 @@ export default function KnowledgeBasePage() {
           <div className='max-w-7xl mx-auto'>
             <div className='text-center mb-12'>
               <h2 className='text-3xl font-bold mb-4'>
-                Latest Updates from Our Channel
+                {t('kb.telegram.title')}
               </h2>
               <p className='text-xl text-text-secondary'>
-                Stay updated with the latest ASO insights and tips
+                {t('kb.telegram.subtitle')}
               </p>
             </div>
 

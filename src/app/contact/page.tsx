@@ -24,11 +24,35 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      // Using Next.js API route (this IS your backend - no separate server needed!)
+      // The /api/contact route runs on the Next.js server
+      // You just need to add RESEND_API_KEY to .env.local file
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert(
+        error instanceof Error
+          ? error.message
+          : 'Failed to send message. Please try again.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -286,10 +310,10 @@ export default function ContactPage() {
                           {t('contact.info.telegram.desc')}
                         </p>
                         <a
-                          href='https://t.me/organic_aso'
+                          href='https://t.me/organic_aso_support'
                           className='text-primary hover:text-primary-700 font-medium'
                         >
-                          t.me/organic_aso
+                          t.me/organic_aso_support
                         </a>
                       </div>
                     </div>
@@ -313,10 +337,42 @@ export default function ContactPage() {
                           {t('contact.info.email.desc')}
                         </p>
                         <a
-                          href='mailto:hello@organicboost.com'
+                          href='mailto:ilya@organicaso.com'
                           className='text-primary hover:text-primary-700 font-medium'
                         >
-                          hello@organicboost.com
+                          ilya@organicaso.com
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className='flex items-start space-x-4'>
+                      <div className='w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0'>
+                        <svg
+                          className='w-5 h-5 text-green-600'
+                          fill='none'
+                          stroke='currentColor'
+                          viewBox='0 0 24 24'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
+                            d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z'
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className='font-semibold'>
+                          {t('contact.info.phone.title')}
+                        </h4>
+                        <p className='text-text-secondary text-sm'>
+                          {t('contact.info.phone.desc')}
+                        </p>
+                        <a
+                          href='tel:+48572382192'
+                          className='text-primary hover:text-primary-700 font-medium'
+                        >
+                          +48 572 382 192
                         </a>
                       </div>
                     </div>
