@@ -99,8 +99,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'googlef515f28ccb88eb61',
-    yandex: '60b51aa0c6a37ac8',
+    google: 'MZBZDBgl0TTmh4XdY8lBY3ZC7naMNUQ5cRGeml54KSY',
+    yandex: 'aee3f7a13362ef32',
   },
   category: 'Technology',
 };
