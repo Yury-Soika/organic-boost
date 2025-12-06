@@ -8,7 +8,7 @@ export default function FAQSchema() {
         name: 'What is ASO (App Store Optimization)?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ASO (App Store Optimization) is the process of improving your mobile app\'s visibility in app store search results. It includes optimizing your app\'s title, subtitle, keywords, description, screenshots, icon, and other metadata to increase organic downloads and improve rankings.',
+          text: "ASO (App Store Optimization) is the process of improving your mobile app's visibility in app store search results. It includes optimizing your app's title, subtitle, keywords, description, screenshots, icon, and other metadata to increase organic downloads and improve rankings.",
         },
       },
       {
@@ -16,7 +16,7 @@ export default function FAQSchema() {
         name: 'What are motivated app installs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Motivated app installs are installs generated through incentivized campaigns where users are rewarded for installing and using your app. At Organic Boost, we use high-quality bots running on real physical devices with unique IDFAs to generate installs that boost your app\'s keyword rankings in App Store and Google Play.',
+          text: "Motivated app installs are installs generated through incentivized campaigns where users are rewarded for installing and using your app. At Organic Boost, we use high-quality bots running on real physical devices with unique IDFAs to generate installs that boost your app's keyword rankings in App Store and Google Play.",
         },
       },
       {
@@ -48,7 +48,7 @@ export default function FAQSchema() {
         name: 'Are your bot installs safe for my app?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, our high-quality bot installs use real physical devices with unique IDFAs/AAIDs. Each install is registered in Apple/Google consoles and passes fraud filters. We\'ve generated 2M+ installs for 120+ apps without any sanctions.',
+          text: "Yes, our high-quality bot installs use real physical devices with unique IDFAs/AAIDs. Each install is registered in Apple/Google consoles and passes fraud filters. We've generated 2M+ installs for 120+ apps without any sanctions.",
         },
       },
     ],
@@ -63,4 +63,3 @@ export default function FAQSchema() {
     />
   );
 }
-

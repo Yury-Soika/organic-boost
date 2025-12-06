@@ -22,10 +22,7 @@ export default function StructuredData() {
       contactType: 'Customer Service',
       availableLanguage: ['English', 'Russian'],
     },
-    sameAs: [
-      'https://t.me/organic_aso',
-      'https://t.me/organic_aso_support',
-    ],
+    sameAs: ['https://t.me/organic_aso', 'https://t.me/organic_aso_support'],
   };
 
   const serviceSchema = {
@@ -99,4 +96,3 @@ export default function StructuredData() {
     </>
   );
 }
-

@@ -32,7 +32,13 @@ export default function Logo({
 }
 
 // Icon-only version for favicon/small spaces
-export function LogoIcon({ size = 32, className = '' }: { size?: number; className?: string }) {
+export function LogoIcon({
+  size = 32,
+  className = '',
+}: {
+  size?: number;
+  className?: string;
+}) {
   return (
     <Image
       src='/logo.png'
@@ -44,4 +50,3 @@ export function LogoIcon({ size = 32, className = '' }: { size?: number; classNa
     />
   );
 }
-
